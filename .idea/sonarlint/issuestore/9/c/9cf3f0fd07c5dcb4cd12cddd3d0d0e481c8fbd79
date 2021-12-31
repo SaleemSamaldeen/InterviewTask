@@ -1,0 +1,9 @@
+
+G
+java:S1444"1Make this "public static setInstance" field final(Â¦÷’
+m
+java:S1104"WMake setInstance a static final constant or non-public and provide accessors if needed.(Â¦÷’
+U
+java:S1118":Add a private constructor to hide the implicit public one.(©¬Ù¼úÿÿÿÿ
+B
+java:S1602",Remove useless curly braces around statement(Â¦÷’

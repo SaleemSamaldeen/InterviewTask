@@ -1,0 +1,6 @@
+Utils\TestDataReader.class
+configs\ConfigHolder.class
+configs\baseConfig.class
+Utils\ReportReader.class
+Utils\DataProvider.class
+Utils\CSVUtils.class

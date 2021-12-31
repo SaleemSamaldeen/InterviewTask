@@ -1,0 +1,22 @@
+{
+  "QA":{
+    "Invalid": {
+      "username": "SaleemSamaldeen",
+      "password": "invalid"
+    },
+    "Valid": {
+      "username": "SaleemSamaldeen",
+      "password": "Qapassword@123"
+    }
+  },
+  "PROD":{
+    "Invalid": {
+      "username": "SaleemSamaldeen",
+      "password": "password@123"
+    },
+    "Valid": {
+      "username": "SaleemSamaldeen",
+      "password": "Prodpassword@123"
+    }
+  }
+}
