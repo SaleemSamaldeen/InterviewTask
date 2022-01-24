@@ -32,7 +32,7 @@ public class BaseTest extends TestDataReader {
         }
         driver.manage().window().maximize();
         //driver1.findElement()
-        driver.get(configHolder.get().webBaseURL());
+        driver.get(configHolder.);
         reportReader.reportCreation();
     }
 

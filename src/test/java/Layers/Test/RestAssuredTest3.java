@@ -24,7 +24,7 @@ public class RestAssuredTest3 extends BaseTest {
         System.out.println("Status code: " + response.getStatusCode());
         System.out.println("Status line: " + response.getStatusLine());
         System.out.println("Status body: " + response.getBody().asString());
-        System.out.println("Status body - Message: " + response.jsonPath().get("message"));
+        System.out.println("Status body - Message: " + response.jsonPath());
         try {
             Map<String, Object> responseMap = response.jsonPath().get("data");
             for (Map.Entry<String, Object> entry : responseMap.entrySet()) {

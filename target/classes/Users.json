@@ -1,5 +1,5 @@
 {
-  "QA":{
+  "QA": {
     "Invalid": {
       "username": "SaleemSamaldeen",
       "password": "invalid"
@@ -9,7 +9,7 @@
       "password": "Qapassword@123"
     }
   },
-  "PROD":{
+  "PROD": {
     "Invalid": {
       "username": "SaleemSamaldeen",
       "password": "password@123"

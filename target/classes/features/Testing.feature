@@ -1,4 +1,3 @@
-
 Feature: A demo to work on cucumber regression cases
 
   #Background runs before each of our scenario and scenario outline
@@ -10,19 +9,19 @@ Feature: A demo to work on cucumber regression cases
 
   @001JobsAlert
   Scenario Outline: Verify username and jobs alert
-      And I verify <username> displayed in home page
-      Then I verify my jobs alert
+    And I verify <username> displayed in home page
+    Then I verify my jobs alert
     Examples:
-      | username         |
-      | saleemsamaldeen  |
+      | username        |
+      | saleemsamaldeen |
 
   @002LoginAndLogout
   Scenario Outline: Verify username and Logout
     And I verify <username> displayed in search results page
     Then Logout user and reaches home page
     Examples:
-      | username         |
-      | saleemsamaldeen  |
+      | username        |
+      | saleemsamaldeen |
 
   @003Messages
   Scenario: Verify my messages
