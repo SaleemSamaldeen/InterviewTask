@@ -1,4 +1,4 @@
-package Layers.Test;
+package Test;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;

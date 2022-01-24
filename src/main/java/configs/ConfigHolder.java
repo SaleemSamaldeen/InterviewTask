@@ -1,19 +1,55 @@
 package configs;
 
-import org.aeonbits.owner.ConfigFactory;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Properties;
-import java.util.function.Consumer;
 
 public class ConfigHolder {
 
-    private static baseConfig baseConfig = ConfigFactory.create(baseConfig.class, System.getProperties(), System.getenv());
+    public static String browser;
+    public static String baseURL;
+    public static String userName;
+    public static String password;
+    public static String apibaseURI;
+    public static String testDataPath;
+    public boolean propertyFlag = false;
 
-    public static baseConfig get() {
-        return baseConfig;
+    public ConfigHolder() {
+        if (!propertyFlag) {
+            Properties properties = null;
+            try {
+                properties = readProps();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            if (properties != null) {
+                browser = properties.getProperty("TestBrowser");
+                baseURL = properties.getProperty("baseURL");
+                userName = properties.getProperty("username");
+                password = properties.getProperty("password");
+                testDataPath = properties.getProperty("testDataPath");
+                apibaseURI = properties.getProperty("apiBaseURL");
+            }
+            propertyFlag = true;
+        }
     }
 
-    public static Consumer<Properties> setInstance = properties -> {
-        baseConfig = ConfigFactory.create(baseConfig.class, properties);
-    };
+    public static Properties readProps() throws IOException {
+        FileInputStream fis = null;
+        Properties prop = null;
+        try {
+            fis = new FileInputStream("src/main/resources/application.properties");
+            prop = new Properties();
+            prop.load(fis);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            if (fis != null) {
+                fis.close();
+            }
+        }
+        return prop;
+    }
 }

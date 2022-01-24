@@ -13,15 +13,14 @@ import java.io.FileInputStream;
 import java.lang.reflect.Method;
 
 
-public class TestDataReader {
-    public static ConfigHolder configHolder;
+public class TestDataReader extends ConfigHolder {
     public static XSSFWorkbook workbook;
     public static XSSFSheet worksheet;
     public static FileInputStream file;
 
     public static void getTestData(String testDataName) throws Exception {
         try {
-            File myFile = new File(configHolder.get().testDataPath() + testDataName + ".xlsx");
+            File myFile = new File(testDataPath + testDataName + ".xlsx");
             file = new FileInputStream(myFile);
             workbook = new XSSFWorkbook(file);
             worksheet = workbook.getSheetAt(0);

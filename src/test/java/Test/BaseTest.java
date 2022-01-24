@@ -1,39 +1,35 @@
-package Layers;
+package Test;
 
-import Utils.ReportReader;
-import Utils.TestDataReader;
 import configs.ConfigHolder;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-public class BaseTest extends TestDataReader {
+public class BaseTest extends ConfigHolder {
     public static WebDriver driver;
-    public static ConfigHolder configHolder;
     protected static final Logger log = LoggerFactory.getLogger("Logger");
-    public ReportReader reportReader = new ReportReader();
 
     @BeforeTest(alwaysRun = true)
     public void initialize() {
-        System.out.println(configHolder.get().webBaseCountry());
-        System.out.println(configHolder.get().webBaseDepartment());
-        System.out.println(configHolder.get().webBaseState());
-        System.out.println(configHolder.get().webBaseURL());
-        if (configHolder.get().browser().equalsIgnoreCase("Chrome")) {
+        if (browser.equalsIgnoreCase("Chrome")) {
             System.setProperty("webdriver.chrome.driver", "C:\\AutomationDrivers\\chromedriver\\chromedriver.exe");
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--no-sandbox");
+            options.addArguments("--headless"); //!!!should be enabled for Jenkins
+            options.addArguments("--disable-dev-shm-usage"); //!!!should be enabled for Jenkins
+            options.addArguments("--window-size=1920x1080");
             driver = new ChromeDriver();
-        } else if (configHolder.get().browser().equalsIgnoreCase("firefox")) {
+        } else if (browser.equalsIgnoreCase("firefox")) {
             System.setProperty("webdriver.firefox.driver", "");
             driver = new FirefoxDriver();
         }
         driver.manage().window().maximize();
-        //driver1.findElement()
-        driver.get(configHolder.);
-        reportReader.reportCreation();
+        driver.get(baseURL);
     }
 
     @AfterTest(alwaysRun = true)

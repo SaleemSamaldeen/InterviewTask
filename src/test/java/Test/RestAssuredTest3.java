@@ -1,20 +1,18 @@
-package Layers.Test;
+package Test;
 
-import Layers.BaseTest;
 import Utils.TestDataReader;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public class RestAssuredTest4 extends BaseTest {
+public class RestAssuredTest3 extends BaseTest {
 
-    @Test(dataProvider = "GenericDataProvider", dataProviderClass = TestDataReader.class, testName = "RestAssuredTest4")
+    @Test(dataProvider = "GenericDataProvider", dataProviderClass = TestDataReader.class, testName = "RestAssuredTest3")
     public void getJSONResponseBody(String endpoint, String parameter) {
         //Base URI to hit the server
         RestAssured.baseURI = endpoint;
@@ -26,12 +24,20 @@ public class RestAssuredTest4 extends BaseTest {
         System.out.println("Status code: " + response.getStatusCode());
         System.out.println("Status line: " + response.getStatusLine());
         System.out.println("Status body: " + response.getBody().asString());
-        System.out.println("Status body - Message: " + response.jsonPath().get("message"));
-        System.out.println("Status body - page: " + response.jsonPath().get("page"));
-        System.out.println("Status body - total: " + response.jsonPath().get("total"));
-        List<HashMap> responseList = response.jsonPath().get("data");
-        Map<String, String> support = response.jsonPath().get("support");
-        System.out.println(responseList.get(0).get("id"));
+        System.out.println("Status body - Message: " + response.jsonPath());
+        try {
+            JsonPath jsonPath = response.jsonPath();
+            Map<String, Object> responseMap = jsonPath.get("data");
+            for (Map.Entry<String, Object> entry : responseMap.entrySet()) {
+                System.out.println("Response body - data: Key " + entry.getKey());
+                System.out.println("Response body - data: Value " + entry.getValue().toString());
+            }
+        } catch (Exception e) {
+            throw new RuntimeException("Error in getting value from Response body");
+        }
+
+
     }
+
 
 }

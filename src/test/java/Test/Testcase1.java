@@ -1,6 +1,4 @@
-package Layers.Test;
-
-import Layers.BaseTest;
+package Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
