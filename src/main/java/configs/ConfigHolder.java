@@ -52,4 +52,12 @@ public class ConfigHolder {
         }
         return prop;
     }
+
+    public static String getBaseURL() {
+        return baseURL;
+    }
+
+    public static void setBaseURL(String baseURL) {
+        ConfigHolder.baseURL = baseURL;
+    }
 }

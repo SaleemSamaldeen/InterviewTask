@@ -23,13 +23,13 @@ public class BaseTest extends ConfigHolder {
             options.addArguments("--headless"); //!!!should be enabled for Jenkins
             options.addArguments("--disable-dev-shm-usage"); //!!!should be enabled for Jenkins
             options.addArguments("--window-size=1920x1080");
-            driver = new ChromeDriver();
+            driver = (WebDriver) new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("firefox")) {
             System.setProperty("webdriver.firefox.driver", "");
-            driver = new FirefoxDriver();
+            driver = (WebDriver) new FirefoxDriver();
         }
         driver.manage().window().maximize();
-        driver.get(baseURL);
+        driver.get(getBaseURL());
     }
 
     @AfterTest(alwaysRun = true)

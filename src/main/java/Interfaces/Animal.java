@@ -19,7 +19,7 @@ interface Animal {
     void elephant();
 }
 
-interface Book extends Animal {
+interface Book extends Animal {  //Interface can extends another Interface
 
     public static void coverPage() {
 

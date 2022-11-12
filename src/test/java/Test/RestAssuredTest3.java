@@ -3,7 +3,6 @@ package Test;
 import Utils.TestDataReader;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
@@ -26,8 +25,7 @@ public class RestAssuredTest3 extends BaseTest {
         System.out.println("Status body: " + response.getBody().asString());
         System.out.println("Status body - Message: " + response.jsonPath());
         try {
-            JsonPath jsonPath = response.jsonPath();
-            Map<String, Object> responseMap = jsonPath.get("data");
+            Map<String, Object> responseMap = response.jsonPath().get("data");
             for (Map.Entry<String, Object> entry : responseMap.entrySet()) {
                 System.out.println("Response body - data: Key " + entry.getKey());
                 System.out.println("Response body - data: Value " + entry.getValue().toString());

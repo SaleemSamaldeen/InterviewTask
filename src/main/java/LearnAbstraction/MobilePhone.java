@@ -17,7 +17,7 @@ public abstract class MobilePhone {
     }
 }
 
-abstract class Dealer extends MobilePhone {  //abstract class can extend another abstract class
+abstract class Dealer extends MobilePhone {  //abstract class can extend another abstract/non-abstract class
     // if all Parent abstract methods not implemented, Child should be declared as abstract class
 
     public void volumeButton() {
