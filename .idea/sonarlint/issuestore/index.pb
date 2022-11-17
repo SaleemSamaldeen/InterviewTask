@@ -29,7 +29,3 @@ V
 &src/main/java/Programs/LearnArray.java,d\e\ded10c5d478b0f9afa0562e2124ba55410fe61d3
 V
 &src/main/java/Programs/Palindrome.java,9\0\90284e37efaaae16be0cb25446d8dfb29de60874
-W
-'src/test/java/Test/RestAssuredTest.java,a\f\aff5e8808a4443b9685110b292543457e6ff801e
-W
-'src/main/java/configs/ConfigHolder.java,9\c\9cf3f0fd07c5dcb4cd12cddd3d0d0e481c8fbd79

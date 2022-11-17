@@ -49,5 +49,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-java:6.10.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.github.bonigarcia:webdrivermanager:5.3.1" level="project" />
   </component>
 </module>

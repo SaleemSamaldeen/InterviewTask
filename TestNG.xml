@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Sample webservices Execution" parallel="false" thread-count="2">
+    <test name="Smoke webservices">
+        <classes>
+            <class name="Test.RestAssuredTest3"/>
+        </classes>
+    </test>
+</suite>
