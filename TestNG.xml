@@ -2,7 +2,7 @@
 <suite name="Sample webservices Execution" parallel="false" thread-count="2">
     <test name="Smoke webservices">
         <classes>
-            <class name="Test.RestAssuredTest3"/>
+            <class name="Test.RestAssuredTest4"/>
         </classes>
     </test>
 </suite>
