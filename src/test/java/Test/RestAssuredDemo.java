@@ -24,7 +24,7 @@ public class RestAssuredDemo {
         }
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         getRestAssuredTesting("https://gorest.co.in/public-api/users", "/public-api/users");
     }
 
