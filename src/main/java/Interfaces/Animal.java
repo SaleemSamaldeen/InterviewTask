@@ -29,7 +29,7 @@ interface Book extends Animal {  //Interface can extends another Interface
 
     public void titlePage();
 
-    void conclusion();
+    public void conclusion();
 }
 
 class Wildlife implements Animal, Book {

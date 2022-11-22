@@ -1,4 +1,5 @@
 
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µŽþ>
 P
 java:S1118":Add a private constructor to hide the implicit public one.(€ÍþÝ
 L
@@ -14,4 +15,3 @@ N	java:S106"9Replace this use of System.out or System.err by a logger.(ÅÓÀè
 java:S1197%"*Move the array designators [] to the type.(ýªŒŒ
 K
 java:S2209'"5Change this instance-reference to a static reference.(Ê¼úÃ
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µŽþ>

@@ -3,13 +3,14 @@ package Test;
 import Utils.TestDataReader;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.springframework.test.web.reactive.server.WebTestClient;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class RestAssuredTest4 extends BaseTest {
@@ -28,12 +29,17 @@ public class RestAssuredTest4 extends BaseTest {
         System.out.println("Status code: " + response.getStatusCode());
         System.out.println("Status line: " + response.getStatusLine());
         System.out.println("Status body: " + response.getBody().asString());
-        System.out.println("Status body - Message: " + response.jsonPath().get("message"));
-        System.out.println("Status body - page: " + response.jsonPath().get("page"));
-        System.out.println("Status body - total: " + response.jsonPath().get("total"));
-        ArrayList<HashMap> responseList = response.jsonPath().get("data");
-        Map<String, String> support = response.jsonPath().get("support");
+
+        JsonPath jsonPath = response.jsonPath();
+
+        System.out.println("Status body - Message: " + jsonPath.get("message"));
+        System.out.println("Status body - page: " + jsonPath.get("page"));
+        System.out.println("Status body - total: " + jsonPath.get("total"));
+        System.out.println(jsonPath.get("data[4].first_name") + " " + jsonPath.get("data[4].last_name"));
+        List<HashMap> responseList = jsonPath.get("data");
+        Map<String, String> support = jsonPath.get("support");
         System.out.println(responseList.get(0).get("id"));
+        System.out.println(support.get("url"));
     }
 
     //webtestclient similar to rest assured used to automate web services

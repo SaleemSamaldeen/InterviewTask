@@ -10,7 +10,7 @@ public class GoogleSearchResults {
 
     public static void init() {
         System.setProperty("webdriver.chrome.driver", "C:\\AutomationDrivers\\chromedriver\\chromedriver.exe");
-        driver = new ChromeDriver();
+        driver = (WebDriver) new ChromeDriver();
         driver.get("https://www.google.com");
         String srearchText = "World";
         for (int i = 0; i < 5; i++) {

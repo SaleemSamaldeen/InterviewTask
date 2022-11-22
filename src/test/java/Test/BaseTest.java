@@ -6,12 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 
 public class BaseTest extends ConfigHolder {
-    WebDriver driver;
+    private WebDriver driver;
 
-    @BeforeClass
+    @BeforeTest
     void initialize() {
         WebDriverManager.chromedriver().setup();
         if (browser.equalsIgnoreCase("Chrome")) {

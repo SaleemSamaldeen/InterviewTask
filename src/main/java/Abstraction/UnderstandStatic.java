@@ -1,4 +1,4 @@
-package LearnAbstraction;
+package Abstraction;
 
 
 public class UnderstandStatic {
