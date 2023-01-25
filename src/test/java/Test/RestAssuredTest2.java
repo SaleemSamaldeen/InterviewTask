@@ -8,15 +8,23 @@ import io.restassured.specification.RequestSpecification;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class RestAssuredTest2 extends BaseTest {
 
     @Test(dataProvider = "GenericDataProvider", dataProviderClass = TestDataReader.class, testName = "RestAssuredTest2")
-    public void registerCustomerPOSTRequestWithJSONRequestBody(String endpoint, String parameter) {
+    public void registerCustomerPOSTRequestWithJSONRequestBody(String endpoint, String parameter) throws IOException {
         //Base URI to hit the server
         RestAssured.baseURI = endpoint;
         //Request Specification for above Base URI
         RequestSpecification requestSpec = RestAssured.given();
 
+        /* for static JSON body import */
+        String jsonBody = new String(Files.readAllBytes(Paths.get("./result.json")));
+
+        /* to pass static json body as payload - one way */
         JSONObject requestParams = new JSONObject();
         requestParams.put("FirstName", "JohnXYZ");
         requestParams.put("LastName", "Johny");
