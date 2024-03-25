@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MavenProject" />
+        <module name="Sample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="MavenProject" target="11" />
+      <module name="Sample" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
