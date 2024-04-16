@@ -17,10 +17,6 @@ W
 'src/main/java/Utils/TestDataReader.java,7\a\7a0ec72b5f8d9c44078ccbe7bd31cf5987258af5
 W
 'src/test/java/Test/StepDefinitions.java,6\4\64753e02c0deb3923be43a151bed114ff7701c64
-S
-#src/main/java/Programs/Casting.java,c\2\c28e7da8b4df4d3cc9544b60167cb45502fafa94
-[
-+src/main/java/Programs/FibonacciSeries.java,8\8\8836c53a37bfe7bf9db7ca8a57800b971a83dcb0
 T
 $src/main/java/Interfaces/Animal.java,3\8\38d2fe15d3a8335fd9dad14a74ab677cacb8acae
 Q

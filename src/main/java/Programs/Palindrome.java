@@ -9,17 +9,17 @@ public class Palindrome {
         System.out.println("Enter number: ");
 
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
+        int number = sc.nextInt();
         //String name = sc.nextLine();
 
-        int temp = num;
-        int rev = 0;
-        while (num != 0) {
-            int remainder = num % 10;
-            rev = rev * 10 + remainder;
-            num = num / 10;
+        int temporary = number;
+        int reverse = 0;
+        while (number != 0) {
+            int remainder = number % 10;
+            reverse = reverse * 10 + remainder;
+            number = number / 10;
         }
-        if (temp == rev) {
+        if (temporary == reverse) {
             System.out.println("Given number is palindrome");
         } else {
             System.out.println("Given number is not a palindrome");

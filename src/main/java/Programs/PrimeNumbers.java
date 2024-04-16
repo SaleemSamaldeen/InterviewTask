@@ -1,11 +1,13 @@
 package Programs;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class PrimeNumbers {
 
-    static int count = 0;
-
     public static void main(String args[]) {
-        testPrimeNumbers(100);
+        testPrimeNumbers(25);
+        findPrimeNumbers();
     }
 
     public static void testPrimeNumbers(int maxNumber) {
@@ -20,6 +22,22 @@ public class PrimeNumbers {
             }
             if (flag == 1) {
                 System.out.println(" " + i);
+            }
+        }
+    }
+
+    public static void findPrimeNumbers() {
+        List<Integer> numbers = Arrays.asList(2,3,4,5,6,7,8,9,10,11,12,13,14,15);
+        for(int i = 0; i<numbers.size(); i++) {
+            int flag = 1;
+            for(int j = 2; j<= numbers.get(i)/2; j++) {
+                if(numbers.get(i) % j == 0) {
+                   flag = 0;
+                   break;
+                }
+            }
+            if(flag==1) {
+                System.out.println("Prime number  \n" + numbers.get(i));
             }
         }
     }

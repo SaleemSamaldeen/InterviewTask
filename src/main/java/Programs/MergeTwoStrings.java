@@ -6,12 +6,12 @@ public class MergeTwoStrings {
     }
 
     private static void mergeStrings(String one, String two) {
-        String result = "";
-        for (int i = 0; i < one.length() | i < two.length(); i++) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < one.length() || i < two.length(); i++) {
             if (i < one.length())
-                result += one.charAt(i);
+                result.append(one.charAt(i));
             if (i < two.length())
-                result += two.charAt(i);
+                result.append(two.charAt(i));
         }
         System.out.println(result);
     }
