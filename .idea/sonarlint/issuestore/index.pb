@@ -3,10 +3,6 @@ U
 %src/main/java/Utils/DataProvider.java,9\1\91053364b94d0c9cf6d24fe90f8bef60667375c4
 A
 src/test/test.iml,d\7\d7a7839e847f2bbbecc3737724f1de3cb25cdb5c
-e
-5src/main/java/Programs/StringToReplaceDuplicates.java,0\8\08cd1e957f7782ec05f0c620d0c0b4a113db7dc7
-\
-,src/main/java/Programs/SwapFirstAndLast.java,9\7\975084ac3b197cf903c85f731c6588f13ee24cb6
 U
 %src/main/java/configs/baseConfig.java,4\a\4ae0fcdd2f117074830482655b781298cfc459bb
 9

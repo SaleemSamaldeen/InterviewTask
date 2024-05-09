@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8514bf-ec03-4df7-ae05-2d4ce17f3cf0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/8836c53a37bfe7bf9db7ca8a57800b971a83dcb0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c28e7da8b4df4d3cc9544b60167cb45502fafa94" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Programs/SortAnArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08cd1e957f7782ec05f0c620d0c0b4a113db7dc7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/975084ac3b197cf903c85f731c6588f13ee24cb6" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Programs/MergeTwoStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Programs/MergeTwoStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Programs/PrimeNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Programs/PrimeNumbers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +77,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
-  <component name="RunManager" selected="Application.MergeTwoStrings">
+  <component name="RunManager" selected="Application.SortAnArray">
     <configuration name="MatchvowelsAndCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Programs.MatchvowelsAndCount" />
       <module name="MavenProject" />
@@ -107,19 +104,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programs.Palindrome" />
-      <module name="MavenProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Programs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PrimeNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Programs.PrimeNumbers" />
       <module name="MavenProject" />
@@ -133,10 +117,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Programs.ReverseString" />
+    <configuration name="SortAnArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programs.SortAnArray" />
+      <module name="MavenProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Programs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringToReplaceDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programs.StringToReplaceDuplicates" />
       <module name="MavenProject" />
       <extension name="coverage">
         <pattern>
@@ -215,21 +210,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ReverseString" />
       <item itemvalue="Application.PrimeNumbers" />
       <item itemvalue="Application.MatchvowelsAndCount" />
-      <item itemvalue="Application.Palindrome" />
       <item itemvalue="Application.MergeTwoStrings" />
+      <item itemvalue="Application.StringToReplaceDuplicates" />
+      <item itemvalue="Application.SortAnArray" />
       <item itemvalue="JUnit.CucumberTestRunner" />
       <item itemvalue="TestNG.RestAssuredTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortAnArray" />
+        <item itemvalue="Application.StringToReplaceDuplicates" />
+        <item itemvalue="Application.MatchvowelsAndCount" />
         <item itemvalue="Application.MergeTwoStrings" />
         <item itemvalue="Application.PrimeNumbers" />
-        <item itemvalue="Application.Palindrome" />
-        <item itemvalue="Application.MatchvowelsAndCount" />
-        <item itemvalue="Application.ReverseString" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712450282961</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="java programs added">
+      <created>1713244323016</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713244323017</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -310,9 +312,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="error fix" />
     <MESSAGE value="POM with restAPI" />
-    <option name="LAST_COMMIT_MESSAGE" value="POM with restAPI" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="java programs added" />
+    <option name="LAST_COMMIT_MESSAGE" value="java programs added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
