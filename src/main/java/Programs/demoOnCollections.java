@@ -8,7 +8,7 @@ public class demoOnCollections {
     public static void main(String[] args) {
 
         // Creating an object of List<String>
-        List<String> arrlist = new ArrayList<String>();
+        List<String> arrlist = new ArrayList();
 
         // Adding elements to arrlist
         arrlist.add("geeks");

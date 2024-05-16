@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8514bf-ec03-4df7-ae05-2d4ce17f3cf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Programs/SortAnArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08cd1e957f7782ec05f0c620d0c0b4a113db7dc7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/975084ac3b197cf903c85f731c6588f13ee24cb6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/a/7a0ec72b5f8d9c44078ccbe7bd31cf5987258af5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce2f30c46e9ac365758285d93a1bb99e665658ad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4b73706a05b80dd3dcc93810e3ede7cde12777c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Programs/GoogleSearchResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Programs/GoogleSearchResults.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Programs/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Programs/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Programs/demoOnCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Programs/demoOnCollections.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +80,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
-  <component name="RunManager" selected="Application.SortAnArray">
+  <component name="RunManager" selected="Application.Palindrome">
     <configuration name="MatchvowelsAndCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Programs.MatchvowelsAndCount" />
       <module name="MavenProject" />
@@ -104,8 +107,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programs.PrimeNumbers" />
+    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programs.Palindrome" />
       <module name="MavenProject" />
       <extension name="coverage">
         <pattern>
@@ -210,21 +213,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PrimeNumbers" />
       <item itemvalue="Application.MatchvowelsAndCount" />
       <item itemvalue="Application.MergeTwoStrings" />
       <item itemvalue="Application.StringToReplaceDuplicates" />
       <item itemvalue="Application.SortAnArray" />
+      <item itemvalue="Application.Palindrome" />
       <item itemvalue="JUnit.CucumberTestRunner" />
       <item itemvalue="TestNG.RestAssuredTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Palindrome" />
         <item itemvalue="Application.SortAnArray" />
         <item itemvalue="Application.StringToReplaceDuplicates" />
         <item itemvalue="Application.MatchvowelsAndCount" />
         <item itemvalue="Application.MergeTwoStrings" />
-        <item itemvalue="Application.PrimeNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713244323017</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="array program">
+      <created>1715278122599</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715278122599</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -313,7 +323,8 @@
     <MESSAGE value="error fix" />
     <MESSAGE value="POM with restAPI" />
     <MESSAGE value="java programs added" />
-    <option name="LAST_COMMIT_MESSAGE" value="java programs added" />
+    <MESSAGE value="array program" />
+    <option name="LAST_COMMIT_MESSAGE" value="array program" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -332,11 +343,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/Test/RestAssuredTest4.java</url>
           <line>38</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Programs/Palindrome.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Programs/MatchvowelsAndCount.java</url>

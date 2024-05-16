@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Palindrome {
 
-    public static void checkPalindrome() {
+    public static void checkNumberIsPalindrome() {
 
         System.out.println("Enter number: ");
 
@@ -26,11 +26,21 @@ public class Palindrome {
         }
     }
 
+    public static void checkStringIsPalindrome() {
+        String name = "abba";
+        String output = "";
+        for(int i = name.length() -1 ; i >= 0; i--) {
+           output = output + name.charAt(i);
+        }
+        if(output.equals(name)) {
+            System.out.println("Given string is palindrome");
+        } else {
+            System.out.println("Given string is not palindrome");
+        }
+    }
+
     public static void main(String[] parms) {
-        checkPalindrome();
-        int i = 1234;   //reverse an integer
-        String value = String.valueOf(i);
-        StringBuffer sf = new StringBuffer(value).reverse();
-        System.out.println("reverse integer: " + sf);
+        checkNumberIsPalindrome();
+        checkStringIsPalindrome();
     }
 }
