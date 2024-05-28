@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f8514bf-ec03-4df7-ae05-2d4ce17f3cf0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/a/7a0ec72b5f8d9c44078ccbe7bd31cf5987258af5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce2f30c46e9ac365758285d93a1bb99e665658ad" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4b73706a05b80dd3dcc93810e3ede7cde12777c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="8f8514bf-ec03-4df7-ae05-2d4ce17f3cf0" name="Default Changelist" comment="array program">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Programs/AddNumbersList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Programs/SecondLargestNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Programs/GoogleSearchResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Programs/GoogleSearchResults.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Programs/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Programs/Palindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Programs/demoOnCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Programs/demoOnCollections.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,22 +74,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
-  <component name="RunManager" selected="Application.Palindrome">
-    <configuration name="MatchvowelsAndCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programs.MatchvowelsAndCount" />
-      <module name="MavenProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Programs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MergeTwoStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programs.MergeTwoStrings" />
+  <component name="RunManager" selected="Application.AddNumbersList">
+    <configuration name="AddNumbersList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programs.AddNumbersList" />
       <module name="MavenProject" />
       <extension name="coverage">
         <pattern>
@@ -109,6 +90,19 @@
     </configuration>
     <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Programs.Palindrome" />
+      <module name="MavenProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Programs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecondLargestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programs.SecondLargestNumber" />
       <module name="MavenProject" />
       <extension name="coverage">
         <pattern>
@@ -213,21 +207,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MatchvowelsAndCount" />
-      <item itemvalue="Application.MergeTwoStrings" />
-      <item itemvalue="Application.StringToReplaceDuplicates" />
-      <item itemvalue="Application.SortAnArray" />
+      <item itemvalue="Application.AddNumbersList" />
       <item itemvalue="Application.Palindrome" />
+      <item itemvalue="Application.SecondLargestNumber" />
+      <item itemvalue="Application.SortAnArray" />
+      <item itemvalue="Application.StringToReplaceDuplicates" />
       <item itemvalue="JUnit.CucumberTestRunner" />
       <item itemvalue="TestNG.RestAssuredTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AddNumbersList" />
+        <item itemvalue="Application.SecondLargestNumber" />
         <item itemvalue="Application.Palindrome" />
         <item itemvalue="Application.SortAnArray" />
         <item itemvalue="Application.StringToReplaceDuplicates" />
-        <item itemvalue="Application.MatchvowelsAndCount" />
-        <item itemvalue="Application.MergeTwoStrings" />
       </list>
     </recent_temporary>
   </component>
@@ -359,11 +353,15 @@
           <line>17</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/Programs/MergeTwoStrings.java</url>
-          <line>3</line>
-          <properties field="one" class="Programs.MergeTwoStrings" />
-          <option name="timeStamp" value="16" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Programs/AddNumbersList.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Programs/AddNumbersList.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
