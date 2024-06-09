@@ -9,7 +9,7 @@ public class AddNumbersList {
 
     /* For first and last index, add accordingly---  */
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         List<Integer> numbers = new ArrayList();
         List<Integer> output = new ArrayList();
         numbers.add(1);
