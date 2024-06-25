@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8514bf-ec03-4df7-ae05-2d4ce17f3cf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Programs/AddNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StaticBlock/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StaticBlock/Students.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Programs/AddNumbersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Programs/AddNumbersList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Programs/AddNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Programs/AddNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Programs/LearnFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Programs/LearnFinal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
-  <component name="RunManager" selected="Application.Students">
+  <component name="RunManager" selected="Application.PrimeNumbers">
     <configuration name="AddNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Programs.AddNumbers" />
       <module name="MavenProject" />
@@ -103,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programs.Palindrome" />
+    <configuration name="Inherited" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Polymorphism.Inherited" />
       <module name="MavenProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programs.*" />
+          <option name="PATTERN" value="Polymorphism.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,8 +114,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecondLargestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programs.SecondLargestNumber" />
+    <configuration name="PrimeNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programs.PrimeNumbers" />
       <module name="MavenProject" />
       <extension name="coverage">
         <pattern>
@@ -209,21 +207,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Palindrome" />
-      <item itemvalue="Application.SecondLargestNumber" />
       <item itemvalue="Application.AddNumbersList" />
       <item itemvalue="Application.AddNumbers" />
       <item itemvalue="Application.Students" />
+      <item itemvalue="Application.Inherited" />
       <item itemvalue="JUnit.CucumberTestRunner" />
       <item itemvalue="TestNG.RestAssuredTest" />
+      <item itemvalue="Application.PrimeNumbers" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Students" />
+        <item itemvalue="Application.PrimeNumbers" />
+        <item itemvalue="Application.Inherited" />
         <item itemvalue="Application.AddNumbers" />
+        <item itemvalue="Application.Students" />
         <item itemvalue="Application.AddNumbersList" />
-        <item itemvalue="Application.SecondLargestNumber" />
-        <item itemvalue="Application.Palindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -352,16 +350,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/Programs/MatchvowelsAndCount.java</url>
           <line>14</line>
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Programs/PrimeNumbers.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Programs/PrimeNumbers.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

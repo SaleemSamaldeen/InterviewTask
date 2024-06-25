@@ -3,7 +3,7 @@ package Programs;
 public class LearnFinal {
 
     public static final int a = 5;
-    public static final String name = "saleem";
+    public static final String NAME = "saleem";
     private int size = 5;
 
     // System.out.println("Addition of final integer: "+ a++); //throws compilation error that final integer can't be modified
